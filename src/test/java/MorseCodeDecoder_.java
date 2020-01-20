@@ -11,12 +11,12 @@ public class MorseCodeDecoder_ {
         assertThat(MorseCodeDecoder.get("        ")).isEqualTo("");
     }
     @Test
-    public void should_return_E_given_E(){
+    public void should_return_E_given_E_in_Morse_Code(){
         assertThat(MorseCodeDecoder.get(".")).isEqualTo("E");
     }
 
     @Test
-    public void should_return_HEY_JUDE_given_HEY_JUDE(){
+    public void should_return_HEY_JUDE_given_HEY_JUDE_in_Morse_Code(){
         assertThat(MorseCodeDecoder.get(".... . -.--     .--- ..- -.. .")).isEqualTo("HEY JUDE");
     }
 
